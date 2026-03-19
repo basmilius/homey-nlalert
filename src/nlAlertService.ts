@@ -12,7 +12,7 @@ const SETTINGS_KEY = 'knownAlertIds';
 export default class NlAlertService extends Shortcuts<NlAlertApp> {
     #knownAlertIds: Set<string> = new Set();
     #activeAlerts: NlAlert[] = [];
-    #pollInterval: ReturnType<typeof setInterval> | null = null;
+    #pollInterval: NodeJS.Timeout | null = null;
 
     /**
      * Returns the currently active NL Alerts that affect the Homey's location.
@@ -27,7 +27,7 @@ export default class NlAlertService extends Shortcuts<NlAlertApp> {
     async initialize(): Promise<void> {
         this.#knownAlertIds = new Set(this.settings.get(SETTINGS_KEY) ?? []);
         await this.#poll();
-        this.#pollInterval = setInterval(() => this.#poll(), POLL_INTERVAL_MS);
+        this.#pollInterval = this.setInterval(() => this.#poll(), POLL_INTERVAL_MS);
         this.log('NL Alert service started, polling every 60 seconds.');
     }
 
@@ -36,7 +36,7 @@ export default class NlAlertService extends Shortcuts<NlAlertApp> {
      */
     async destroy(): Promise<void> {
         if (this.#pollInterval !== null) {
-            clearInterval(this.#pollInterval);
+            this.clearInterval(this.#pollInterval);
             this.#pollInterval = null;
         }
     }
