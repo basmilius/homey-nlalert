@@ -1,67 +1,67 @@
 {
-    "id": "com.basmilius.nlalert",
-    "version": "1.0.0",
-    "compatibility": ">=12.4.0",
-    "sdk": 3,
-    "brandColor": "#E17000",
-    "platforms": [
-        "local"
+  "id": "com.basmilius.nlalert",
+  "version": "1.0.1",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "brandColor": "#E17000",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "NL Alert",
+    "nl": "NL Alert"
+  },
+  "description": {
+    "en": "Get notified when an NL Alert affects your location.",
+    "nl": "Ontvang een melding wanneer een NL Alert invloed heeft op jouw locatie."
+  },
+  "category": [
+    "security"
+  ],
+  "tags": {
+    "en": [
+      "alert",
+      "warning",
+      "emergency",
+      "nl-alert",
+      "notification",
+      "safety"
     ],
-    "name": {
-        "en": "NL Alert",
-        "nl": "NL Alert"
-    },
-    "description": {
-        "en": "Get notified when an NL Alert affects your location.",
-        "nl": "Ontvang een melding wanneer een NL Alert invloed heeft op jouw locatie."
-    },
-    "category": [
-        "security"
-    ],
-    "tags": {
-        "en": [
-            "alert",
-            "warning",
-            "emergency",
-            "nl-alert",
-            "notification",
-            "safety"
-        ],
-        "nl": [
-            "alert",
-            "waarschuwing",
-            "noodsituatie",
-            "nl-alert",
-            "melding",
-            "veiligheid"
-        ]
-    },
-    "permissions": [
-        "homey:manager:geolocation"
-    ],
-    "images": {
-        "small": "/assets/images/small.png",
-        "large": "/assets/images/large.png",
-        "xlarge": "/assets/images/xlarge.png"
-    },
-    "author": {
-        "name": "Bas Milius",
-        "email": "bas@mili.us"
-    },
-    "bugs": {
-        "url": "https://github.com/basmilius/homey-nlalert/issues"
-    },
-    "homepage": "https://bas.dev",
-    "source": "https://github.com/basmilius/homey-nlalert",
-    "support": "https://github.com/basmilius/homey-nlalert/issues",
-    "contributing": {
-        "donate": {
-            "paypal": {
-                "username": "basmilius"
-            },
-            "githubSponsors": {
-                "username": "basmilius"
-            }
-        }
+    "nl": [
+      "alert",
+      "waarschuwing",
+      "noodsituatie",
+      "nl-alert",
+      "melding",
+      "veiligheid"
+    ]
+  },
+  "permissions": [
+    "homey:manager:geolocation"
+  ],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Bas Milius",
+    "email": "bas@mili.us"
+  },
+  "bugs": {
+    "url": "https://github.com/basmilius/homey-nlalert/issues"
+  },
+  "homepage": "https://bas.dev",
+  "source": "https://github.com/basmilius/homey-nlalert",
+  "support": "https://github.com/basmilius/homey-nlalert/issues",
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "basmilius"
+      },
+      "githubSponsors": {
+        "username": "basmilius"
+      }
     }
+  }
 }
