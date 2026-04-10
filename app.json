@@ -4,7 +4,7 @@
   "version": "1.0.4",
   "compatibility": ">=12.4.0",
   "sdk": 3,
-  "brandColor": "#E17000",
+  "brandColor": "#f97316",
   "platforms": [
     "local"
   ],
