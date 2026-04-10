@@ -132,13 +132,11 @@ export default class NlAlertService extends Shortcuts<NlAlertApp> {
     async #fireTrigger(alert: NlAlert): Promise<void> {
         this.log(`Firing trigger for NL Alert: ${alert.id}`);
 
-        await this.registry
-            .findTrigger(Triggers.AlertReceived)
-            ?.trigger({}, {
-                alert_id: alert.id,
-                alert_message: alert.message,
-                alert_start_at: alert.start_at,
-                alert_stop_at: alert.stop_at
-            });
+        await this.registry.fireTrigger(Triggers.AlertReceived, {}, {
+            alert_id: alert.id,
+            alert_message: alert.message,
+            alert_start_at: alert.start_at,
+            alert_stop_at: alert.stop_at
+        });
     }
 }
