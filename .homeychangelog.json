@@ -21,5 +21,9 @@
     "1.0.5": {
         "en": "Update app icon and color.",
         "nl": "App-icoon en kleur bijgewerkt."
+    },
+    "1.0.6": {
+        "en": "Update dependencies. Optimize app-size.",
+        "nl": "Update dependencies. App-grootte geoptimaliseerd."
     }
 }
