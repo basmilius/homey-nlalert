@@ -25,5 +25,9 @@
     "1.0.6": {
         "en": "Update dependencies. Optimize app-size.",
         "nl": "Update dependencies. App-grootte geoptimaliseerd."
+    },
+    "1.0.7": {
+        "en": "Optimize app-size.",
+        "nl": "App-grootte geoptimaliseerd."
     }
 }
